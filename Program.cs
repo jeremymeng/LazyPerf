@@ -9,8 +9,6 @@ namespace LazyPerf
     public class LazyBenchmarks
     {
         static readonly object syncObject = new object();
-        static readonly Stopwatch stopwatch = new Stopwatch();
-        const int iterations = 10000000;
 
         [Benchmark]
         public void CreateWithLazyDefaultCtor()
